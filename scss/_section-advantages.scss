@@ -1,0 +1,100 @@
+.advantages {
+    color: $dark;
+    padding-bottom: 40px;
+
+    @media (max-width: 767px) {
+        padding: 80px 0;
+    }
+
+    &__above-title {
+        font-size: 14px;
+        @include latoreg;
+        text-align: center;
+
+        &:before {
+            content: '';
+            display: inline-table;
+            vertical-align: middle;
+            width: 40px;
+            height: 1px;
+            background-color: $red;
+            margin-right: 12px;
+            
+        }
+    }
+
+    &__title {
+        margin: auto;
+        max-width: 970px;
+        text-align: center;
+
+        h2 {
+            margin: 20px 0 52px 0;
+            font-size: 48px;
+            @include monsb;
+            
+        }
+    }
+
+    .adv-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+
+            .turk-puzzle-img {
+                display: none;
+            }
+        }
+
+
+        
+        &__items-container {
+            flex-basis: 580px;
+
+            .adv-item {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 44px;
+
+                &__img {
+                    
+                    width: 40px
+
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+                &__text {
+                    flex-basis: 500px;
+                    padding-top: 7px;
+                }
+
+                &__title {
+                    margin: 0 0 16px 0;
+
+                    h4 {
+                        @include monsb;
+                        font-size: 20px;
+                    }
+                    
+                }
+
+                &__desc {
+                    @include latoreg;
+                    font-size: 16px;
+
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

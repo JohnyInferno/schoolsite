@@ -1,0 +1,86 @@
+.form-popup {
+    position: relative;
+    padding: 36px 70px;
+    height: auto;
+    width: auto;
+    max-width: 770px;
+    max-height: 577px !important;
+    margin: auto;
+    color: $dark;
+    background: white url('../img/popup-bg.jpg') no-repeat left top;
+    border-radius: 20px;
+    
+
+    .popup-content {
+        margin-left: 330px;
+        max-width: 300px;
+        margin-right: 2px;
+
+        &__title {
+            h2 {
+                @include monsb;
+                font-size: 32px;
+                color: $blue;
+            }
+        }
+
+        &__subtitle {
+            margin: 12px 0 36px 0;
+            span {
+                @include latoreg;
+                font-size: 12px;
+            }
+        }
+
+        &__form {
+
+            ul {
+                list-style: none;
+    
+                li {
+                    margin-bottom: 16px;
+
+                    label {
+                        display: block;
+                        @include monssb;
+                        font-size: 14px;
+                        margin-bottom: 18px;
+                    }
+    
+                    input {
+                        width: 300px;
+                        height: 52px;
+                        border-radius: 40px;
+                        font-size: 14px;
+                        border: 1px solid rgba($dark, 0.1);
+                        outline: none;
+                        padding-left: 20px;
+
+                    }
+                    
+                    .form-button {
+                        margin-top: 32px;
+                    }
+
+                    button {
+                        font-size: 16px;
+                        padding: 16px 88px;
+                        @include monssb;
+                        color: #ffffff;
+                        background: $red;
+                        border-radius: 30px;
+                        border: none;
+                        transition: all 0.25s;
+                        cursor: pointer;
+    
+                        &:hover {
+                            background: #ffffff;
+                            color: $blue;
+                        }
+                    }
+                }
+            }            
+        }
+    }
+}
+

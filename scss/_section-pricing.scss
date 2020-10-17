@@ -1,0 +1,135 @@
+.pricing {
+    color: $dark;
+    padding-bottom: 100px;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        padding: 80px 0;
+    }
+
+    &__above-title {
+        font-size: 14px;
+        @include latoreg;
+        text-align: center;
+
+        &:before {
+            content: '';
+            display: inline-table;
+            vertical-align: middle;
+            width: 40px;
+            height: 1px;
+            background-color: $red;
+            margin-right: 12px;
+            
+        }
+    }
+
+    &__title {
+        margin: auto;
+        max-width: 770px;
+        text-align: center;
+
+        h2 {
+            margin: 20px 0 52px 0;
+            font-size: 40px;
+            @include monsb;
+            
+        }
+    }
+
+    &__lesson-count-title {
+        @include monssb;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 60px;
+
+        @media (max-width: 1023px) {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .pricing__item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__item {
+        margin: 0 8px;
+        padding: 16px 0 16px 24px;
+        flex-basis: 200px;
+        border: 1px solid rgba(#23283B, 0.5);
+        border-radius: 40px;
+        text-align: start;
+        @include latoreg;
+        font-size: 14px;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:before {
+            content: '';
+            display: inline-table;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(#23283B, 0.5);
+            margin-right: 12px;
+            border-radius: 50%;
+        }
+
+    }
+
+    &__calculate {
+        margin-bottom: 64px;
+
+        p {
+            @include monsb;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        span {
+            color: $blue;
+        }
+    }
+
+    &__important {
+        margin: auto;
+        font-weight: 500px;
+        font-size: 25px;
+        margin-bottom: 32px;
+        max-width: 990px;
+        
+
+        span {
+            @include monsb;
+            font-size: 32px;
+            color: $red;
+        }
+
+        .bold {
+            @include monsb;
+            color: $dark;
+            font-size: 25px;
+        }
+    }
+
+    &__sale {
+        @include monsb;
+        font-size: 32px;
+        color: $red;
+    }
+}
+
+.pricing__item-pressed {
+    border: 1px solid $blue;
+
+    &:before {
+        background: $blue;
+        border: 1px $blue solid;
+    }
+}

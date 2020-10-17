@@ -1,0 +1,118 @@
+.bonuses {
+    padding: 100px 0;
+    color: $dark;
+
+    @media (max-width: 767px) {
+        padding: 80px 0;
+    }
+
+    &__above-title {
+        text-align: center;
+        font-size: 14px;
+        @include latoreg;
+
+        &:before {
+            content: '';
+            display: inline-table;
+            vertical-align: middle;
+            width: 40px;
+            height: 1px;
+            background-color: $red;
+            margin-right: 12px;
+        }
+
+    }
+
+    &__title {
+        text-align: center;
+        
+        h2 {
+            margin: 20px 0 50px 0;
+            font-size: 40px;
+            @include monsb;
+            
+        }
+        
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 0 40px 0;
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__note {
+        text-align: center;
+        @include latoreg;
+        font-size: 16px;
+        
+    }
+
+    .bonus-item {
+        flex-basis: 33%;
+        padding: 32px;
+
+        &__title {
+            // margin-bottom: 35px;
+            min-height: 107px;
+
+            h4 {
+                margin: 0;
+                @include monsb;
+                color: $blue;
+                font-size: 20px;
+            }
+        }
+
+        &__list {
+            // list-style: 
+
+            li {
+                margin-bottom: 16px;
+                @include latoreg;
+                font-size: 16px;
+                
+
+                &::marker {
+                    color: $red;
+                    margin: 0;
+                    padding: 0;
+                }
+
+
+                // &:before {
+                //     content: '';
+                //     display: inline-table;
+                //     vertical-align: middle;
+                //     width: 4px;
+                //     height: 4px;
+                //     border-radius: 50%;
+                //     background-color: $red;
+                //     margin-right: 8px;
+                // }
+
+               
+            }
+
+        }
+    }
+
+    .middle-item {
+        margin: 0 30px;
+
+        .bonus-item__title {
+            margin: 0;
+
+            span {
+                @include monsb;
+                font-size: 14px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

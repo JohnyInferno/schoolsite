@@ -1,0 +1,38 @@
+body {
+    @include monsreg;
+}
+
+.container {
+    margin: auto;
+    max-width: 1170px;
+
+    @media (max-width: 1365px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: 1023px) {
+        max-width: 1023px;
+    }
+
+    @media (max-width: 991px) {
+        max-width: 991px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 767px;
+
+    }
+
+    @media (max-width: 575px) {
+        max-width: 575px;
+    }
+
+    @media (max-width: 575px) {
+        max-width: 575px;
+    }
+
+    @media (max-width: 374px) {
+        max-width: 374px;
+    }
+}
+

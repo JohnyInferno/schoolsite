@@ -1,0 +1,158 @@
+.exp {
+    padding: 80px 0 100px 0;
+    color: $dark;
+
+    @media (max-width: 767px) {
+        padding: 80px 0;
+    }
+
+    &__list-container {
+        background: url("../img/hands.jpg") no-repeat right 20px bottom;
+
+        @media (max-width: 991px) {
+            background: white;
+
+        }
+    }
+
+    &__above-title {
+        font-size: 14px;
+        @include latoreg;
+
+        &:before {
+            content: '';
+            display: inline-table;
+            vertical-align: middle;
+            width: 40px;
+            height: 1px;
+            background-color: $red;
+            margin-right: 12px;
+        }
+    }
+
+    &__title {
+        
+        h2 {
+            margin: 20px 0 40px 0;
+            font-size: 32px;
+            @include monsb;
+        }
+    }
+
+    &__list {
+        max-width: 570px;
+        padding-bottom: 35px;
+    }
+
+
+    .exp-item {
+        display: flex;
+        margin-bottom: 24px;
+
+        &__text-container {
+            padding-top: 3px;
+        }
+
+        &__img {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        &__title {
+            display: inline-block;
+            @include latoblack;
+            font-weight: 800;
+            font-size: 20px;
+            margin-bottom: 15px;
+            
+        }
+
+        &__subtitle {
+            display: inline-block;
+            
+            @include latoreg;
+            font-size: 16px;
+        }
+    }
+
+    .certificate {
+        background: $blue;
+        border-radius: 30px;
+        padding: 60px 70px;
+
+        @media (max-width: 1070px) {
+            padding: 30px 40px;
+        }
+
+        &__row {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 991px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__text-container {
+            padding: 40px 0;
+
+            @media (max-width: 991px) {
+                flex-basis: 400px;
+                text-align: center;
+            }
+        }
+
+        &__img {
+            margin-right: 80px;
+
+            @media (max-width: 1070px) {
+                margin-right: 20px;
+
+            }
+        }
+
+        &__title {
+            margin-bottom: 56px;
+
+            h2 {
+                color: white;
+                @include monsb;
+                font-size: 32px;
+                line-height: 41px;
+
+                @media (max-width: 1070px) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &__button {
+
+            a {
+                text-decoration: none;
+                color: white;
+                @include monssb;
+                font-size: 16px;
+                padding: 16px 62px;
+                background: $red;
+                border-radius: 30px;
+
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $blue;
+                    background: white;
+                    
+                }
+
+                @media (max-width: 1070px) {
+                   padding: 16px 50px;
+                }
+            }
+        }
+    }
+}
+
+

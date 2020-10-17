@@ -1,0 +1,111 @@
+.header {
+    background-color: $blue;
+    padding: 15px 0 10px 0;
+    box-shadow: 0 0px 20px rgba(black, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    color: white;
+    transition: all 0.5s;
+
+    @media (max-width: 767px) {
+        box-shadow: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            @include monsb;
+            margin: 15px 0;
+        }
+
+        .icons {
+            display: none;
+            
+
+            @media (max-width: 767px) {
+                display: inline-block;
+
+                &__red {
+                    margin-right: 28px;
+                }
+
+                .icon {
+                    display: inline-block;
+                
+                    
+                }
+            }
+        }
+
+        .phones {
+            display: flex;
+            align-items: baseline;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+
+            .phone {
+                display: inline-block;
+                margin-left: 84px;
+                
+                @include monssb;
+                font-size: 16px;
+        
+            }
+
+            .phone-one {
+                
+                span {
+                    &:before {
+                        content: url("../img/Phone.png");
+                        display: inline-table;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+
+                    @media (max-width: 767px) {
+                        
+                    }
+                }
+            }
+
+            .phone-two {
+
+
+                display: inline-block;
+                text-align: center;
+
+
+                &__text {
+                    display: block;
+                    &:before {
+                        content: url("../img/whatsapp.png");
+                        display: inline-table;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+                }
+
+                &__desc {
+                    display: block;
+                    font-size: 9px;
+                    @include latoreg;
+                }
+
+            }
+        }
+    }
+
+    
+}
+
+.header-white {
+    background: white;
+    color: $dark;
+}

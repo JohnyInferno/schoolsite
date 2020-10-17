@@ -1,0 +1,43 @@
+.footer {
+    padding: 100px 0 116px 0;
+    text-align: center;
+    color: white;
+    background: url("/img/flag-bg.jpg") no-repeat center center;
+    background-size: 100%;
+
+    &__text {
+        @include monsb;
+        font-size: 32px;
+        margin-bottom: 70px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__button {
+        flex-basis: 270px;
+        margin: 0 15px;
+
+        button {
+            @include monssb;
+            font-size: 16px;
+            padding: 16px 0;
+            background: $red;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            width: 100%;
+            color: white;
+            transition: all 0.5s;
+
+            &:hover {
+                color: $blue;
+                background: white;
+                
+            }
+        }
+    }
+}
